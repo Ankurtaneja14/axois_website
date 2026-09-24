@@ -1,0 +1,1516 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en-IN"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="web_standard" name="shell-type"/>
+<title>Axois Studios — Business Systems, Websites & Workflow Automation</title>
+<meta name="description" content="Axois Studios builds practical digital systems for growing businesses — with Business Desk as its flagship management product, plus business websites and experimental workflow automation."/>
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"/>
+<meta name="author" content="Axois Studios"/>
+<meta name="application-name" content="Axois Studios"/>
+<meta name="theme-color" content="#FBF9F5"/>
+<link rel="preload" as="image" href="assets/logo.webp" type="image/webp">
+<link rel="preload" as="image" href="assets/1.webp" type="image/webp">
+<link rel="canonical" href="/"/>
+<meta property="og:title" content="Axois Studios — Business Systems, Websites & Workflow Automation"/>
+<meta property="og:description" content="Business Desk, websites and experimental workflow automation — built by Axois Studios for growing businesses."/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="/"/>
+<meta property="og:site_name" content="Axois Studios"/>
+<meta property="og:locale" content="en_IN"/>
+<meta property="og:image" content="assets/logo.webp"/>
+<meta property="og:image:alt" content="Business Desk by Axois Studios"/>
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Axois Studios — Business Systems, Websites & Workflow Automation"/>
+<meta name="twitter:description" content="Business Desk, websites and experimental workflow automation — built by Axois Studios for growing businesses."/>
+<meta name="twitter:image" content="assets/logo.webp"/>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              primary: '#A33900',
+              accent: '#EA580C',
+              hover: '#C2410C',
+              bg: '#FBF9F5',
+              cream: '#F5F2EB',
+              tint: '#FDF6F0',
+              dark: '#141416',
+            }
+          },
+          boxShadow: {
+            'card': '0 4px 20px -2px rgba(0, 0, 0, 0.04), 0 2px 6px -1px rgba(0, 0, 0, 0.02)',
+            'card-hover': '0 12px 30px -4px rgba(24, 24, 27, 0.08), 0 4px 10px -2px rgba(24, 24, 27, 0.04)',
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    @layer base {
+      html, body {
+        margin: 0;
+        padding: 0;
+        background-color: #FBF9F5;
+        color: #18181B;
+        font-family: 'Plus Jakarta Sans', sans-serif;
+      }
+      body { overscroll-behavior: none; }
+      body { letter-spacing: -0.01em; }
+    }
+    ::-webkit-scrollbar { display: none; }
+
+    /* Shared visual tokens keep surfaces, evidence and transitions consistent. */
+    :root {
+      --bd-bg: #fbf9f5;
+      --bd-ink: #171717;
+      --bd-muted: #66615a;
+      --bd-line: rgba(72, 65, 55, .12);
+      --bd-orange: #c2410c;
+      --bd-peach: #fff1e8;
+      --bd-card-radius: 12px;
+      --bd-card-shadow: 0 1px 0 rgba(0,0,0,.03), 0 8px 28px rgba(30,25,20,.045);
+      --bd-card-shadow-hover: 0 1px 0 rgba(0,0,0,.03), 0 10px 30px rgba(30,25,20,.06);
+    }
+    html { scroll-padding-top: 88px; }
+    body { background: var(--bd-bg); }
+    section { position: relative; }
+    .display-tight { text-wrap: balance; }
+    .eyebrow { font-size: 11px; letter-spacing: .16em; text-transform: uppercase; font-weight: 800; }
+    .card-surface,
+    .premium-card {
+      background: #fff;
+      border: 1px solid rgba(230, 228, 221, .85);
+      border-radius: var(--bd-card-radius);
+      box-shadow: var(--bd-card-shadow);
+    }
+    .card-surface,
+    .hero-art,
+    a,
+    button {
+      transition: color .2s ease, background-color .2s ease, border-color .2s ease, box-shadow .2s ease, transform .2s ease;
+    }
+    .card-surface:hover {
+      box-shadow: var(--bd-card-shadow-hover);
+    }
+    .hero-art { box-shadow: none; }
+    .hero-art img { filter: none; }
+    .product-shot { box-shadow: 0 12px 34px rgba(26,22,17,.08); }
+    .nav-shadow { box-shadow: 0 1px 0 rgba(30,25,20,.08); }
+    .dark-panel {
+      background: #171717;
+    }
+    .cta-panel {
+      background: #171717;
+    }
+    .faq-toggle:hover { color: #a33900; }
+    .proof-chip { border: 1px solid rgba(75,65,55,.11); background: #fff; border-radius: 8px; }
+    .trust-number { font-variant-numeric: tabular-nums; }
+    .eyebrow { letter-spacing: .12em; }
+    [class*="rounded-[24px]"], [class*="rounded-2xl"] { border-radius: var(--bd-card-radius); }
+    a.rounded-full { border-radius: 8px; }
+    header { backdrop-filter: none; -webkit-backdrop-filter: none; }
+    section { scroll-margin-top: 88px; }
+    .glow-orange, .glow { box-shadow: none; }
+    @media (max-width: 767px) {
+      .hero-art { transform: none; }
+      .display-tight { text-wrap: pretty; }
+    }
+</style>
+
+<!-- SEO structured data: Axois Studios + Business Desk -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "/#organization",
+      "name": "Axois Studios",
+      "url": "/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "assets/logo.webp"
+      },
+      "telephone": "+917988930154"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "/#business-desk",
+      "name": "Business Desk",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web",
+      "description": "A practical business management system and management layer for growing Indian businesses.",
+      "url": "/#business-desk",
+      "image": "assets/logo.webp",
+      "publisher": {
+        "@id": "/#organization"
+      },
+      "brand": {
+        "@type": "Brand",
+        "name": "Business Desk"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "/#website",
+      "url": "/",
+      "name": "Axois Studios",
+      "publisher": {
+        "@id": "/#organization"
+      },
+      "inLanguage": "en-IN"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Have you built this for a real business?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Haan. Business Desk is based on working systems we have already built and implemented. See the proof section for the kinds of operational problems and workflows we have already worked on." }
+    },
+    {
+      "@type": "Question",
+      "name": "Kya MARG/Tally replace karna padega?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Nahi, bilkul nahi. MARG ya Tally aapki billing, accounting aur GST ke liye jaise chalte hain waise hi chalenge. Business Desk unke upar ek management layer banata hai jo customer tracking, WhatsApp CRM aur owner visibility sambhalta hai." }
+    },
+    {
+      "@type": "Question",
+      "name": "Kya system mere business ke hisaab se banega?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Haan. Hum generic software bech kar gayab nahi hote. Pehle aapke workflow ko samjhte hain, fir aapki requirements ke mutabiq modules configure karke dete hain." }
+    },
+    {
+      "@type": "Question",
+      "name": "Kya mujhe pura data migrate karna padega?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Nahi. Zero forced migration. Jo purana data jahan hai wahi rahega. Naye system mein sirf zaroori customer list aur starting data configure hota hai bina kisi disruption ke." }
+    },
+    {
+      "@type": "Question",
+      "name": "Kya meri team ise use kar payegi?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Aapki team already WhatsApp use karti hai. Humara interface utna hi simple hai. Hum setup ke sath team ke liye basic training aur guided walkthroughs provide karte hain." }
+    },
+    {
+      "@type": "Question",
+      "name": "Kitna time lagega?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Average implementation 7 se 14 din mein complete ho jata hai. Pehle 50% advance pe kaam start hota hai, aur poora live hone ke baad baaki 50%." }
+    },
+    {
+      "@type": "Question",
+      "name": "Kya mobile se use kar sakte hain?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Haan. Owner dashboard aur WhatsApp Hub mobile responsive hain, jisse aap kisi bhi waqt kahin se bhi live status dekh sakein." }
+    }
+  ]
+}
+</script>
+
+</head>
+<body class="bg-[#FBF9F5] font-sans text-stone-900 antialiased selection:bg-orange-100 selection:text-orange-900">
+<!-- HEADER -->
+<header class="fixed top-0 left-0 w-full z-50 bg-[#FBF9F5] border-b border-stone-200/80 nav-shadow">
+<div class="h-20 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
+<a class="flex items-center gap-3 group" data-path="home" href="/">
+<div class="flex flex-col leading-none"><img alt="Axois Studios Business Desk logo" class="h-9 sm:h-10 w-auto object-contain transition-transform duration-200 group-hover:scale-[1.02]" height="285" src="assets/logo.webp" title="Business Desk — a product by Axois Studios" width="820"/><span class="text-[9px] sm:text-[10px] font-semibold tracking-[0.18em] uppercase text-stone-500 mt-1">by Axois Studios</span></div>
+</a>
+<nav aria-label="Primary navigation" class="hidden md:flex items-center gap-8" data-active-classes="text-[#A33900] font-semibold">
+<a class="text-sm text-stone-600 hover:text-stone-900 font-medium transition-colors" data-path="business-desk" href="#business-desk" title="Business Desk">Business Desk</a>
+<a class="text-sm text-stone-600 hover:text-stone-900 font-medium transition-colors" data-path="services" href="#services" title="Services">Services</a>
+<a class="text-sm text-stone-600 hover:text-stone-900 font-medium transition-colors" data-path="how-we-work" href="#how-we-work" title="How We Work">How We Work</a>
+<a class="text-sm text-stone-600 hover:text-stone-900 font-medium transition-colors" data-path="pricing" href="#pricing" title="Pricing">Pricing</a>
+<a class="text-sm text-stone-600 hover:text-stone-900 font-medium transition-colors" data-path="about" href="#about" title="About Axois Studios">About</a>
+</nav>
+<div class="hidden fixed left-4 right-4 top-[76px] rounded-2xl bg-white border border-stone-200 shadow-xl p-3" id="mobile-menu">
+<a class="block rounded-xl px-4 py-3 text-sm font-semibold text-stone-700 hover:bg-stone-50" href="#business-desk" title="Business Desk">Business Desk</a>
+<a class="block rounded-xl px-4 py-3 text-sm font-semibold text-stone-700 hover:bg-stone-50" href="#services" title="Services">Services</a>
+<a class="block rounded-xl px-4 py-3 text-sm font-semibold text-stone-700 hover:bg-stone-50" href="#how-we-work" title="How We Work">How We Work</a>
+<a class="block rounded-xl px-4 py-3 text-sm font-semibold text-stone-700 hover:bg-stone-50" href="#pricing" title="Pricing">Pricing</a>
+<a class="block rounded-xl px-4 py-3 text-sm font-semibold text-stone-700 hover:bg-stone-50" href="#about" title="About Axois Studios">About</a>
+</div>
+<div class="flex items-center gap-3">
+<a class="bg-stone-900 hover:bg-black text-white font-semibold px-5 py-2.5 rounded-full text-xs sm:text-sm inline-flex items-center gap-2 shadow-sm transition-all duration-200 hover:scale-[1.02] active:scale-[0.98]" data-contact="whatsapp" href="https://wa.me/917988930154?text=Hi%20Axois%20Studios%2C%20I%27d%20like%20to%20see%20Business%20Desk." rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[#62df7d] text-[18px]">chat</span>
+<span>WhatsApp Us</span>
+</a>
+<button aria-expanded="false" aria-label="Toggle menu" class="md:hidden p-2 rounded-lg text-stone-600 hover:bg-stone-200/50 transition-colors" id="mobile-menu-toggle" type="button">
+<span class="material-symbols-outlined text-[22px]">menu</span>
+</button>
+</div>
+</div>
+</header>
+<main class="w-full pt-20">
+<div class="flex flex-col w-full">
+<!-- SECTION 01: HERO SECTION -->
+<section class="relative w-full overflow-hidden bg-[#FBF9F5] py-12 lg:py-20" id="hero">
+<div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row items-center justify-between gap-10 lg:gap-12 relative z-10">
+<!-- Hero Copy Left (Mobile order: Headline first, CTAs second) -->
+<div class="w-full lg:w-[48%] flex flex-col items-start gap-6">
+<div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-50 border border-amber-200/70 text-amber-900 text-xs font-semibold tracking-wide">
+<span>For Indian businesses outgrowing scattered operations. 🇮🇳</span>
+</div>
+<div class="flex flex-col gap-4">
+<h1 class="text-4xl sm:text-5xl lg:text-[62px] font-extrabold text-stone-900 tracking-tight leading-[1.08]">
+                We build the systems<br/>
+<span class="text-[#A33900]">your business actually needs.</span>
+</h1>
+<p class="text-lg sm:text-xl font-semibold text-stone-800 -mt-1">
+  Aap business chalao. System hum sambhal lenge.
+</p>
+<p class="text-base sm:text-lg text-stone-600 leading-relaxed max-w-xl">
+                Axois Studios builds digital systems for growing businesses — including Business Desk, business websites and workflow automation.
+              </p>
+</div>
+<div class="w-full p-4 sm:p-5 rounded-2xl bg-[#FDF6F0] border border-orange-500/15 shadow-sm flex items-start gap-3.5">
+<span class="material-symbols-outlined text-[#A33900] text-[24px] shrink-0 mt-0.5">verified</span>
+<p class="text-sm sm:text-base text-stone-900 font-medium leading-snug">
+                We keep what already works.<br class="hidden sm:inline"/> We build the missing layer around it.
+              </p>
+</div>
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 w-full sm:w-auto pt-1">
+<a class="bg-stone-900 hover:bg-black text-white font-semibold px-7 py-3.5 rounded-full text-sm inline-flex items-center justify-center gap-2.5 shadow-sm transition-all duration-200 hover:scale-[1.02] active:scale-[0.98]" data-contact="whatsapp" href="https://wa.me/917988930154?text=Hi%20Axois%2C%20I%20want%20to%20explore%20Business%20Desk%20for%20my%20business." rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[#62df7d] text-[20px]">chat</span>
+<span>Explore Business Desk</span>
+</a>
+<a class="bg-white hover:bg-stone-50 text-stone-900 border border-stone-300 font-semibold px-6 py-3.5 rounded-full text-sm inline-flex items-center justify-center gap-2 transition-all duration-200 hover:scale-[1.02] active:scale-[0.98] shadow-sm" href="#how-we-work">
+<span class="material-symbols-outlined text-stone-600 text-[20px]">arrow_downward</span>
+<span>See how it works</span>
+</a>
+</div>
+<p class="text-xs sm:text-[13px] text-stone-500 flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+<span>15-minute conversation · No obligation</span>
+</p>
+</div>
+<!-- Hero Graphic Right -->
+<div class="w-full lg:w-[52%] relative flex flex-col items-center pt-2 lg:pt-0">
+<div class="hero-art relative w-full rounded-[24px] bg-white p-2.5 sm:p-3.5 premium-card overflow-hidden glow-orange">
+<img alt="Business Desk operational dashboard showing business overview" class="w-full h-auto rounded-xl object-contain" height="1536" src="assets/1.webp" width="2752"/>
+</div>
+<!-- Floating Notification / KPI Pill -->
+<div class="w-full max-w-xs sm:max-w-sm mr-auto -mt-10 sm:-mt-14 ml-3 sm:ml-6 relative z-20 transition-transform duration-300 hover:-translate-y-1">
+<div class="card-surface p-2 sm:p-2.5 bg-white shadow-xl border border-stone-200/80">
+<img alt="Business Desk live key business signals panel" class="w-full h-auto rounded-lg object-contain" height="1536" loading="lazy" src="assets/2.webp" width="2752"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="w-full border-b border-stone-200/70 bg-white/70">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-3 sm:py-4">
+    <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 rounded-full border border-stone-200 bg-white px-4 py-2.5 shadow-sm">
+      <span class="text-[10px] sm:text-[11px] font-bold tracking-[0.18em] uppercase text-[#A33900]">Built in the real world</span>
+      <div class="flex items-center gap-3 text-xs sm:text-sm text-stone-600">
+        <span>Implemented for real operating problems</span>
+        <a href="#proof" class="font-semibold text-stone-900 hover:text-[#A33900]">See proof →</a>
+      </div>
+    </div>
+  </div>
+</section>
+<div data-seo-intro="axois-studios" class="sr-only">
+  Axois Studios builds practical digital systems for growing businesses in India. Its flagship product, Business Desk, is a business management system and management layer for customer management, operations, WhatsApp workflows and business visibility. Axois Studios also provides business website building and is developing experimental workflow automation products for repetitive business processes.
+</div>
+</div>
+</section>
+
+<!-- AXOIS SERVICES -->
+<section id="services" class="w-full bg-white py-20 lg:py-28 border-y border-stone-200/70">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-3xl mb-10">
+      <span class="text-xs font-semibold tracking-widest uppercase text-[#A33900]">AXOIS STUDIOS / DIGITAL SYSTEMS FOR GROWING BUSINESSES</span>
+      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-stone-900 tracking-tight leading-tight mt-3">
+        Three layers of the same business system.
+      </h2>
+      <p class="text-base sm:text-lg text-stone-600 leading-relaxed mt-4">
+        Axois does not sell a random list of agency services. We improve different parts of the same business: the website brings customers in, Business Desk helps run the business, and automation reduces repetitive work inside it.
+      </p>
+    </div>
+
+    <div class="max-w-4xl mx-auto mb-10 border-y border-stone-200 py-5">
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-0 text-center">
+        <div class="flex flex-col items-center gap-2 sm:border-r sm:border-stone-200">
+          <span class="text-[10px] font-bold tracking-[0.2em] uppercase text-stone-500">Customer-facing</span>
+          <span class="text-base sm:text-lg font-extrabold text-stone-900">Website</span>
+          <span class="text-xs text-stone-500">gets customers into the business</span>
+        </div>
+        <div class="flex flex-col items-center gap-2 sm:border-r sm:border-stone-200">
+          <span class="text-[10px] font-bold tracking-[0.2em] uppercase text-[#A33900]">Operations</span>
+          <span class="text-base sm:text-lg font-extrabold text-stone-900">Business Desk</span>
+          <span class="text-xs text-stone-500">helps run the business</span>
+        </div>
+        <div class="flex flex-col items-center gap-2">
+          <span class="text-[10px] font-bold tracking-[0.2em] uppercase text-stone-500">Workflow</span>
+          <span class="text-base sm:text-lg font-extrabold text-stone-900">Automation</span>
+          <span class="text-xs text-stone-500">reduces repetitive work</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-5 items-stretch">
+      <a href="#business-desk" class="group flex flex-col border-2 border-[#A33900]/30 bg-[#FFF8F2] p-6 sm:p-8 shadow-sm ring-1 ring-[#A33900]/10 md:-translate-y-2 hover:border-[#A33900]/60 transition-colors">
+        <div class="flex items-center justify-between gap-4 mb-8">
+          <span class="text-xs font-bold tracking-[0.18em] uppercase text-[#A33900]">01 / Operational system</span>
+          <span class="text-[10px] font-bold uppercase tracking-[0.16em] text-[#A33900]">Flagship</span>
+        </div>
+        <h3 class="text-2xl sm:text-3xl font-extrabold text-stone-900 tracking-tight">Business Desk</h3>
+        <p class="text-lg font-bold text-stone-900 leading-snug mt-4">Run the business with a clearer operating layer.</p>
+        <p class="text-sm sm:text-base text-stone-600 leading-relaxed mt-3">Business Desk connects customers, communication, operations, reports and owner visibility without forcing replacement of the tools already doing billing or accounts.</p>
+        <div class="mt-6 pt-5 border-t border-[#A33900]/20">
+          <p class="text-[10px] font-bold tracking-[0.18em] uppercase text-[#A33900]">What it improves</p>
+          <p class="text-sm text-stone-700 leading-relaxed mt-2">Scattered customer context, follow-ups, operational tracking and owner visibility.</p>
+        </div>
+        <span class="inline-flex mt-auto pt-8 text-sm font-semibold text-stone-900 group-hover:text-[#A33900] transition-colors">Explore Business Desk <span class="ml-2">→</span></span>
+      </a>
+
+      <a href="#website-building" class="group flex flex-col border border-stone-200 bg-[#F8F6F1] p-6 sm:p-7 hover:border-stone-400 transition-colors">
+        <div class="flex items-center justify-between gap-4 mb-8">
+          <span class="text-xs font-bold tracking-[0.18em] uppercase text-stone-500">02 / Customer-facing system</span>
+          <span class="text-[10px] font-bold uppercase tracking-[0.16em] text-stone-500">Service</span>
+        </div>
+        <h3 class="text-2xl sm:text-3xl font-extrabold text-stone-900 tracking-tight">Website Building</h3>
+        <p class="text-lg font-bold text-stone-900 leading-snug mt-4">Make the business clear before the first conversation.</p>
+        <p class="text-sm sm:text-base text-stone-600 leading-relaxed mt-3">This is not just website development. We connect positioning, structure, visual system, conversion and implementation so the website gets customers into the business.</p>
+        <div class="mt-6 pt-5 border-t border-stone-200">
+          <p class="text-[10px] font-bold tracking-[0.18em] uppercase text-stone-500">What it improves</p>
+          <p class="text-sm text-stone-700 leading-relaxed mt-2">Unclear offers, weak first impressions and friction between attention and enquiry.</p>
+        </div>
+        <span class="inline-flex mt-auto pt-8 text-sm font-semibold text-stone-900 group-hover:text-[#A33900] transition-colors">Discuss a Website <span class="ml-2">→</span></span>
+      </a>
+
+      <a href="#workflow-automation" class="group flex flex-col border border-stone-200 bg-[#F8F6F1] p-6 sm:p-7 hover:border-stone-400 transition-colors">
+        <div class="flex items-center justify-between gap-4 mb-8">
+          <span class="text-xs font-bold tracking-[0.18em] uppercase text-stone-500">03 / Workflow system</span>
+          <span class="text-[10px] font-bold uppercase tracking-[0.16em] text-stone-500">Axois Labs</span>
+        </div>
+        <h3 class="text-2xl sm:text-3xl font-extrabold text-stone-900 tracking-tight">Workflow Automation</h3>
+        <p class="text-lg font-bold text-stone-900 leading-snug mt-4">Turn repetitive business work into repeatable workflows.</p>
+        <p class="text-sm sm:text-base text-stone-600 leading-relaxed mt-3">This is experimental workflow automation: we identify repetitive work, connect the steps and test what can become a reliable system.</p>
+        <div class="mt-6 pt-5 border-t border-stone-200">
+          <p class="text-[10px] font-bold tracking-[0.18em] uppercase text-stone-500">What it improves</p>
+          <p class="text-sm text-stone-700 leading-relaxed mt-2">Manual handoffs, repetitive follow-ups, data movement and notifications that still need constant pushing.</p>
+        </div>
+        <span class="inline-flex mt-auto pt-8 text-sm font-semibold text-stone-900 group-hover:text-[#A33900] transition-colors">Explore Automation <span class="ml-2">→</span></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- BUSINESS DESK PRODUCT INTRO -->
+<section id="business-desk" class="w-full bg-[#F5F2EB] py-20 lg:py-28 border-b border-stone-200/70">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
+    <div class="lg:col-span-5">
+      <span class="text-[10px] sm:text-[11px] font-bold tracking-[0.22em] uppercase text-[#A33900]">AXOIS STUDIOS</span>
+      <div class="mt-4 text-[10px] sm:text-[11px] font-bold tracking-[0.22em] uppercase text-stone-500">The flagship product</div>
+      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-stone-900 tracking-tight leading-tight mt-3">
+        Business Desk
+      </h2>
+      <p class="text-lg text-stone-700 leading-relaxed mt-5">
+        Your business already has software. The missing part is often everything happening around it.
+      </p>
+      <p class="text-base text-stone-600 leading-relaxed mt-3">
+        Business Desk is the management and operational layer that connects customers, communication, tasks, reports and owner visibility — without replacing the systems that already do billing, accounts or stock work.
+      </p>
+
+      <div class="mt-7 border-l-2 border-[#A33900] pl-4 text-sm text-stone-700">
+        <p><span class="font-semibold text-stone-900">Existing software:</span> transaction and accounting layer</p>
+        <p class="mt-1"><span class="font-semibold text-stone-900">Business Desk:</span> management and visibility layer</p>
+      </div>
+
+      <div class="mt-7 flex flex-wrap gap-2 text-xs font-medium text-stone-700">
+        <span class="px-3 py-2 border border-stone-300 bg-white">Customers</span>
+        <span class="px-3 py-2 border border-stone-300 bg-white">Communication</span>
+        <span class="px-3 py-2 border border-stone-300 bg-white">Operations</span>
+        <span class="px-3 py-2 border border-stone-300 bg-white">Reports</span>
+        <span class="px-3 py-2 border border-stone-300 bg-white">Owner Visibility</span>
+      </div>
+
+      <div class="mt-6 flex flex-col gap-2 text-sm text-stone-700">
+        <div class="flex items-center gap-2"><span class="text-[#A33900]">↓</span><span><span class="font-semibold text-stone-900">Customers</span> become a workable history, not scattered memory.</span></div>
+        <div class="flex items-center gap-2"><span class="text-[#A33900]">↓</span><span><span class="font-semibold text-stone-900">Communication</span> stays connected to the actual customer record.</span></div>
+        <div class="flex items-center gap-2"><span class="text-[#A33900]">↓</span><span><span class="font-semibold text-stone-900">Operations</span> become visible before problems pile up.</span></div>
+        <div class="flex items-center gap-2"><span class="text-[#A33900]">↓</span><span><span class="font-semibold text-stone-900">Reports</span> show what matters without chasing numbers.</span></div>
+        <div class="flex items-center gap-2"><span class="text-[#A33900]">↓</span><span><span class="font-semibold text-stone-900">Owner visibility</span> stays clear without constant follow-up.</span></div>
+      </div>
+
+      <a data-contact="whatsapp" href="https://wa.me/917988930154?text=Hi%20Axois%20Studios%2C%20I%20want%20to%20see%20how%20Business%20Desk%20would%20fit%20my%20business." target="_blank" rel="noopener noreferrer"
+         class="inline-flex mt-8 bg-stone-900 text-white px-6 py-3.5 font-semibold text-sm hover:bg-black transition-colors">
+        See how Business Desk would fit your business →
+      </a>
+    </div>
+    <div class="lg:col-span-7">
+      <div class="relative bg-white border border-stone-200 p-2 sm:p-3 shadow-[0_24px_50px_rgba(28,25,23,0.08)]">
+        <img src="assets/3.webp" alt="Business Desk customer and operations management screen" class="w-full h-auto object-contain" height="1536" loading="lazy" width="2752">
+        <div class="absolute left-4 bottom-4 flex flex-wrap gap-2">
+          <span class="rounded-full border border-stone-200 bg-white/95 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-[0.14em] text-stone-600">Customer history</span>
+          <span class="rounded-full border border-stone-200 bg-white/95 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-[0.14em] text-stone-600">Outstanding</span>
+          <span class="rounded-full border border-stone-200 bg-white/95 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-[0.14em] text-stone-600">Owner view</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROOF / CASE STUDY LAYER -->
+<section id="proof" class="w-full bg-[#F5F2EB] py-20 lg:py-28 border-b border-stone-200/70">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col gap-10">
+    <div class="max-w-3xl">
+      <span class="text-xs font-semibold tracking-widest uppercase text-[#A33900]">Built in the real world</span>
+      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-stone-900 tracking-tight mt-3">These systems started with real operating problems.</h2>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-5">
+      <article class="bg-white border border-stone-200 p-5 sm:p-6 shadow-sm">
+        <div class="flex items-center justify-between gap-3 pb-3 border-b border-stone-200">
+          <span class="text-[10px] font-bold tracking-[0.18em] uppercase text-stone-500">Retail operations</span>
+          <span class="text-[10px] font-semibold uppercase tracking-[0.14em] text-amber-700 bg-amber-50 border border-amber-200 px-2 py-1 rounded-full">Example operating problem</span>
+        </div>
+        <div class="mt-4 space-y-4 text-sm sm:text-base">
+          <div>
+            <p class="text-[10px] font-bold tracking-[0.18em] uppercase text-stone-500">Problem</p>
+            <p class="mt-2 text-stone-700 leading-relaxed">Customer follow-ups, outstanding balances, and WhatsApp communication were spread across multiple people and tools.</p>
+          </div>
+          <div>
+            <p class="text-[10px] font-bold tracking-[0.18em] uppercase text-stone-500">System built</p>
+            <p class="mt-2 text-stone-700 leading-relaxed">A shared customer flow with order visibility, conversations and follow-up tracking tied to the customer record.</p>
+          </div>
+          <div>
+            <p class="text-[10px] font-bold tracking-[0.18em] uppercase text-stone-500">What changed</p>
+            <p class="mt-2 text-stone-700 leading-relaxed">The owner and team could see what needed attention without chasing scattered messages and notes.</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="bg-white border border-stone-200 p-5 sm:p-6 shadow-sm">
+        <div class="flex items-center justify-between gap-3 pb-3 border-b border-stone-200">
+          <span class="text-[10px] font-bold tracking-[0.18em] uppercase text-stone-500">Distribution workflow</span>
+          <span class="text-[10px] font-semibold uppercase tracking-[0.14em] text-emerald-700 bg-emerald-50 border border-emerald-200 px-2 py-1 rounded-full">Verified implementation</span>
+        </div>
+        <div class="mt-4 space-y-4 text-sm sm:text-base">
+          <div>
+            <p class="text-[10px] font-bold tracking-[0.18em] uppercase text-stone-500">Problem</p>
+            <p class="mt-2 text-stone-700 leading-relaxed">Stock movement, dispatch updates and customer communication were running outside one clear operating view.</p>
+          </div>
+          <div>
+            <p class="text-[10px] font-bold tracking-[0.18em] uppercase text-stone-500">System built</p>
+            <p class="mt-2 text-stone-700 leading-relaxed">Inventory, task visibility and owner dashboards connected around the live operational flow.</p>
+          </div>
+          <div>
+            <p class="text-[10px] font-bold tracking-[0.18em] uppercase text-stone-500">What changed</p>
+            <p class="mt-2 text-stone-700 leading-relaxed">The business gained a simpler operating layer for tracking movement and follow-up without relying on memory.</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="bg-white border border-stone-200 p-5 sm:p-6 shadow-sm">
+        <div class="flex items-center justify-between gap-3 pb-3 border-b border-stone-200">
+          <span class="text-[10px] font-bold tracking-[0.18em] uppercase text-stone-500">Service business</span>
+          <span class="text-[10px] font-semibold uppercase tracking-[0.14em] text-amber-700 bg-amber-50 border border-amber-200 px-2 py-1 rounded-full">Example operating problem</span>
+        </div>
+        <div class="mt-4 space-y-4 text-sm sm:text-base">
+          <div>
+            <p class="text-[10px] font-bold tracking-[0.18em] uppercase text-stone-500">Problem</p>
+            <p class="mt-2 text-stone-700 leading-relaxed">Customer history, repeat work and service reminders were fragmented across chats, notes and separate follow-up habits.</p>
+          </div>
+          <div>
+            <p class="text-[10px] font-bold tracking-[0.18em] uppercase text-stone-500">System built</p>
+            <p class="mt-2 text-stone-700 leading-relaxed">A customer history layer with communication context, task tracking and business visibility.</p>
+          </div>
+          <div>
+            <p class="text-[10px] font-bold tracking-[0.18em] uppercase text-stone-500">What changed</p>
+            <p class="mt-2 text-stone-700 leading-relaxed">Customer continuity improved because the team was no longer dependent on memory or manually reconnecting the context.</p>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="case-study" class="w-full bg-[#FBF9F5] py-20 lg:py-24 border-b border-stone-200/70">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="rounded-3xl border border-stone-200 bg-white p-6 sm:p-8 shadow-sm">
+      <div class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6">
+        <div class="max-w-2xl">
+          <span class="text-[10px] sm:text-[11px] font-bold tracking-[0.18em] uppercase text-[#A33900]">Case study</span>
+          <h3 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-stone-900 tracking-tight mt-3">One implementation, in detail.</h3>
+        </div>
+        <a href="#proof" class="inline-flex items-center gap-2 text-sm font-semibold text-stone-900 hover:text-[#A33900]">View the case study <span>→</span></a>
+      </div>
+      <div class="mt-6 grid grid-cols-1 md:grid-cols-2 gap-5 text-sm sm:text-base text-stone-700">
+        <div class="rounded-2xl bg-stone-50 border border-stone-200 p-4">
+          <p class="text-[10px] font-bold tracking-[0.18em] uppercase text-stone-500">Problem</p>
+          <p class="mt-2 leading-relaxed">Operational information existed in billing data, WhatsApp chat history, and owner memory — but no single source of truth.</p>
+        </div>
+        <div class="rounded-2xl bg-stone-50 border border-stone-200 p-4">
+          <p class="text-[10px] font-bold tracking-[0.18em] uppercase text-stone-500">System</p>
+          <p class="mt-2 leading-relaxed">Business Desk connected customer records, ongoing communication and operational follow-up in a single working layer.</p>
+        </div>
+        <div class="rounded-2xl bg-stone-50 border border-stone-200 p-4">
+          <p class="text-[10px] font-bold tracking-[0.18em] uppercase text-stone-500">What was built</p>
+          <p class="mt-2 leading-relaxed">Customer history, WhatsApp visibility, task flow and operational reporting shaped around the business’s real workflow.</p>
+        </div>
+        <div class="rounded-2xl bg-stone-50 border border-stone-200 p-4">
+          <p class="text-[10px] font-bold tracking-[0.18em] uppercase text-stone-500">Result</p>
+          <p class="mt-2 leading-relaxed">The team gained a clearer operating view while keeping essential tools such as billing and accounts in place.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WEBSITE BUILDING -->
+<section id="website-building" class="relative w-full bg-[#FBF9F5] py-24 lg:py-32 border-b border-stone-200/70 overflow-hidden">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+
+      <!-- Copy -->
+      <div class="lg:col-span-5">
+        <div class="flex items-center gap-3 mb-7">
+          <span class="text-[11px] font-bold tracking-[0.18em] uppercase text-stone-500">02 / Service</span>
+          <span class="h-px w-10 bg-stone-300"></span>
+          <span class="text-[11px] font-medium text-stone-400">Websites</span>
+        </div>
+
+        <h2 class="text-4xl sm:text-5xl lg:text-[58px] font-extrabold text-stone-900 tracking-[-0.045em] leading-[0.98]">
+          Your website<br>
+          should <span class="text-[#A33900]">sell the idea.</span>
+        </h2>
+
+        <p class="text-lg text-stone-600 leading-relaxed mt-7 max-w-lg">
+          We build business websites that make the offer obvious, the business credible and the next step easy.
+        </p>
+
+        <div class="mt-8 border-l-2 border-[#A33900] pl-5">
+          <p class="text-sm font-semibold text-stone-900">Not just development.</p>
+          <p class="text-sm text-stone-500 mt-1 leading-relaxed">
+            Positioning → structure → visual system → conversion → implementation.
+          </p>
+        </div>
+
+        <div class="mt-8 flex flex-wrap gap-x-5 gap-y-3 text-xs font-medium text-stone-600">
+          <span>01 Positioning</span>
+          <span>02 UX structure</span>
+          <span>03 Design</span>
+          <span>04 Build</span>
+        </div>
+
+        <a data-contact="whatsapp" href="https://wa.me/917988930154?text=Hi%20Axois%2C%20I%27d%20like%20to%20discuss%20building%20a%20website%20for%20my%20business."
+           target="_blank" rel="noopener noreferrer"
+           class="inline-flex mt-9 bg-stone-900 text-white px-6 py-3.5 font-semibold text-sm hover:bg-[#A33900] transition-colors">
+          Discuss a Website <span class="ml-2">↗</span>
+        </a>
+      </div>
+
+      <!-- Visual -->
+      <div class="lg:col-span-7 relative">
+        <div class="absolute -top-8 -right-5 text-[96px] lg:text-[150px] leading-none font-black text-stone-200/50 select-none pointer-events-none">02</div>
+        <div class="relative border border-stone-300 bg-white p-2 shadow-[0_20px_60px_rgba(28,25,23,0.08)]">
+          <img
+            src="assets/19.webp"
+            alt="Website design and development work by Axois Studios"
+            class="w-full h-auto object-cover"
+            width="1264"
+            height="848"
+            loading="lazy"
+          >
+          <div class="absolute left-5 bottom-5 bg-white/95 backdrop-blur-sm border border-stone-200 px-4 py-3 shadow-lg">
+            <p class="text-[10px] font-bold uppercase tracking-[0.16em] text-stone-400">Built for business</p>
+            <p class="text-sm font-semibold text-stone-900 mt-0.5">Clarity over decoration.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- WORKFLOW AUTOMATION -->
+<section id="workflow-automation" class="relative w-full bg-[#141416] text-white py-24 lg:py-32 overflow-hidden">
+  <div class="absolute inset-0 pointer-events-none opacity-[0.06]"
+       style="background-image:linear-gradient(rgba(255,255,255,.4) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.4) 1px,transparent 1px);background-size:48px 48px;"></div>
+
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+
+      <!-- Visual first on desktop -->
+      <div class="lg:col-span-7 order-2 lg:order-1 relative">
+        <div class="absolute -bottom-10 -left-8 text-[96px] lg:text-[150px] leading-none font-black text-white/[0.035] select-none pointer-events-none">03</div>
+
+        <div class="relative border border-stone-700 bg-[#18181A] p-2 shadow-[0_24px_80px_rgba(0,0,0,0.35)]">
+          <img
+            src="assets/20.webp"
+            alt="Workflow automation system showing triggers, automated actions and business outcomes"
+            class="w-full h-auto object-cover"
+            width="1376"
+            height="768"
+            loading="lazy"
+          >
+          <div class="absolute top-5 left-5 border border-stone-600 bg-[#141416]/90 px-4 py-2">
+            <p class="text-[10px] font-bold uppercase tracking-[0.16em] text-stone-500">Axois Labs</p>
+            <p class="text-xs font-medium text-stone-200 mt-0.5">Workflow experiment / 001</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Copy -->
+      <div class="lg:col-span-5 order-1 lg:order-2">
+        <div class="flex items-center gap-3 mb-7">
+          <span class="text-[11px] font-bold tracking-[0.18em] uppercase text-stone-500">03 / Experimental Product</span>
+          <span class="h-px w-10 bg-stone-700"></span>
+          <span class="text-[11px] font-medium text-stone-600">Axois Labs</span>
+        </div>
+
+        <h2 class="text-4xl sm:text-5xl lg:text-[58px] font-extrabold tracking-[-0.045em] leading-[0.98]">
+          Make the work<br>
+          <span class="text-stone-500">run itself.</span>
+        </h2>
+
+        <p class="text-lg text-stone-300 leading-relaxed mt-7 max-w-lg">
+          We are experimenting with a simple question: which repetitive business tasks should stop requiring a person to push them forward?
+        </p>
+
+        <div class="mt-8 grid grid-cols-1 gap-3">
+          <div class="flex items-start gap-4 border-t border-stone-800 pt-4">
+            <span class="text-xs font-bold text-stone-500">01</span>
+            <div>
+              <p class="text-sm font-semibold text-white">Find the repetitive work.</p>
+              <p class="text-xs text-stone-500 mt-1">Follow-ups, data movement, handoffs, notifications.</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-4 border-t border-stone-800 pt-4">
+            <span class="text-xs font-bold text-stone-500">02</span>
+            <div>
+              <p class="text-sm font-semibold text-white">Connect the steps.</p>
+              <p class="text-xs text-stone-500 mt-1">Trigger → logic → action → record.</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-4 border-t border-stone-800 pt-4">
+            <span class="text-xs font-bold text-stone-500">03</span>
+            <div>
+              <p class="text-sm font-semibold text-white">Keep what actually works.</p>
+              <p class="text-xs text-stone-500 mt-1">Useful experiments become repeatable systems.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-8 flex flex-wrap items-center gap-4">
+          <a data-contact="whatsapp" href="https://wa.me/917988930154?text=Hi%20Axois%20Studios%2C%20I%27m%20interested%20in%20Workflow%20Automation."
+             target="_blank" rel="noopener noreferrer"
+             class="inline-flex bg-white text-stone-900 px-6 py-3.5 font-semibold text-sm hover:bg-stone-200 transition-colors">
+            Explore Automation <span class="ml-2">↗</span>
+          </a>
+          <span class="text-xs text-stone-500">Experimental · evolving · built around real workflows</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- BUSINESS DESK FIT / HOW IT WORKS WITH CURRENT TOOLS -->
+<!-- SECTION 05: PRODUCT / FEATURES -->
+<section class="w-full bg-[#FFFFFF] py-20 lg:py-28" id="business-desk-modules">
+<div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col gap-16">
+<div class="flex flex-col items-center text-center gap-3 max-w-3xl mx-auto">
+<span class="text-xs font-semibold tracking-widest uppercase text-amber-700 bg-amber-50 border border-amber-200/60 px-3.5 py-1 rounded-full inline-flex items-center gap-1.5">
+              Modules &amp; capabilities
+            </span>
+<h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-stone-900 tracking-tight leading-tight">
+              Business Desk connects the operating layer behind the business.
+            </h2>
+<p class="text-base sm:text-lg text-stone-600 leading-relaxed max-w-2xl font-normal">
+              The job is not to replace the tools already working. It is to give the business a clearer operating layer across the work happening around them.
+            </p>
+</div>
+
+<div class="w-full max-w-5xl mx-auto rounded-[28px] border border-stone-200/80 bg-stone-50 p-2.5 sm:p-4 shadow-xl">
+<img alt="Business Desk product capability overview" class="w-full h-auto rounded-2xl object-contain" height="1536" loading="lazy" src="assets/11.webp" width="2752"/>
+</div>
+
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="card-surface p-6 sm:p-7 flex flex-col gap-5 border border-stone-200/80 bg-white">
+<div class="flex items-center gap-3">
+<div class="w-11 h-11 rounded-2xl bg-orange-500/10 border border-orange-500/15 flex items-center justify-center text-[#A33900]">
+<span class="material-symbols-outlined text-[22px]">groups</span>
+</div>
+<div>
+<p class="text-[10px] sm:text-[11px] font-bold tracking-[0.22em] uppercase text-amber-700">Customer management</p>
+<h3 class="text-xl sm:text-2xl font-extrabold text-stone-900 tracking-tight mt-1">Stop searching for customer history across different places.</h3>
+</div>
+</div>
+<ul class="text-sm sm:text-base text-stone-600 leading-relaxed space-y-2 list-disc pl-5">
+<li>Customer profiles and relationship context</li>
+<li>Purchase and history visibility</li>
+<li>Follow-up tracking without depending on memory</li>
+<li>Relationship visibility for repeat business</li>
+</ul>
+<p class="text-sm text-stone-700 leading-relaxed border-t border-stone-200 pt-3">
+                  The business keeps the full customer story in one place so repeat opportunities are easier to protect.
+                </p>
+</div>
+
+<div class="card-surface p-6 sm:p-7 flex flex-col gap-5 border border-stone-200/80 bg-white">
+<div class="flex items-center gap-3">
+<div class="w-11 h-11 rounded-2xl bg-emerald-500/10 border border-emerald-500/15 flex items-center justify-center text-emerald-700">
+<span class="material-symbols-outlined text-[22px]">chat_bubble</span>
+</div>
+<div>
+<p class="text-[10px] sm:text-[11px] font-bold tracking-[0.22em] uppercase text-emerald-700">WhatsApp business hub</p>
+<h3 class="text-xl sm:text-2xl font-extrabold text-stone-900 tracking-tight mt-1">Keep WhatsApp conversations tied to the business, not lost in a phone.</h3>
+</div>
+</div>
+<ul class="text-sm sm:text-base text-stone-600 leading-relaxed space-y-2 list-disc pl-5">
+<li>Visible customer communication flow</li>
+<li>Context connected to the record</li>
+<li>Follow-up and reminder process</li>
+<li>Operational communication without losing track</li>
+</ul>
+<p class="text-sm text-stone-700 leading-relaxed border-t border-stone-200 pt-3">
+                  Critical conversations stay connected to the customer record instead of disappearing into scattered chats.
+                </p>
+</div>
+
+<div class="card-surface p-6 sm:p-7 flex flex-col gap-5 border border-stone-200/80 bg-white">
+<div class="flex items-center gap-3">
+<div class="w-11 h-11 rounded-2xl bg-orange-500/10 border border-orange-500/15 flex items-center justify-center text-[#A33900]">
+<span class="material-symbols-outlined text-[22px]">inventory_2</span>
+</div>
+<div>
+<p class="text-[10px] sm:text-[11px] font-bold tracking-[0.22em] uppercase text-amber-700">Operational visibility</p>
+<h3 class="text-xl sm:text-2xl font-extrabold text-stone-900 tracking-tight mt-1">Know what is pending before it becomes a problem.</h3>
+</div>
+</div>
+<ul class="text-sm sm:text-base text-stone-600 leading-relaxed space-y-2 list-disc pl-5">
+<li>Inventory and flow tracking</li>
+<li>Operational task visibility</li>
+<li>Action status without chasing the team</li>
+<li>Order and work progress clarity</li>
+</ul>
+<p class="text-sm text-stone-700 leading-relaxed border-t border-stone-200 pt-3">
+                  Teams can move faster when the next action is visible, not buried in memory or a spreadsheet.
+                </p>
+</div>
+
+<div class="card-surface p-6 sm:p-7 flex flex-col gap-5 border border-stone-200/80 bg-white">
+<div class="flex items-center gap-3">
+<div class="w-11 h-11 rounded-2xl bg-stone-100 border border-stone-200 flex items-center justify-center text-stone-800">
+<span class="material-symbols-outlined text-[22px]">monitoring</span>
+</div>
+<div>
+<p class="text-[10px] sm:text-[11px] font-bold tracking-[0.22em] uppercase text-stone-600">Owner dashboard</p>
+<h3 class="text-xl sm:text-2xl font-extrabold text-stone-900 tracking-tight mt-1">See the numbers that matter without chasing the team.</h3>
+</div>
+</div>
+<ul class="text-sm sm:text-base text-stone-600 leading-relaxed space-y-2 list-disc pl-5">
+<li>Reports and overview views</li>
+<li>Monthly and yearly indicators</li>
+<li>Business visibility at a glance</li>
+<li>Operational summary for owners</li>
+</ul>
+<p class="text-sm text-stone-700 leading-relaxed border-t border-stone-200 pt-3">
+                  Owners do not need to chase numbers; the business itself should show them what requires attention.
+                </p>
+</div>
+
+<div class="card-surface p-6 sm:p-7 flex flex-col gap-5 border border-stone-200/80 bg-white md:col-span-2">
+<div class="flex items-center gap-3">
+<div class="w-11 h-11 rounded-2xl bg-[#FDE7D8] border border-[#F7C5A3] flex items-center justify-center text-[#A33900]">
+<span class="material-symbols-outlined text-[22px]">insights</span>
+</div>
+<div>
+<p class="text-[10px] sm:text-[11px] font-bold tracking-[0.22em] uppercase text-[#A33900]">Business intelligence</p>
+<h3 class="text-xl sm:text-2xl font-extrabold text-stone-900 tracking-tight mt-1">Spot repeat demand without digging through spreadsheets.</h3>
+</div>
+</div>
+<ul class="text-sm sm:text-base text-stone-600 leading-relaxed space-y-2 list-disc pl-5">
+<li>Customer opportunity visibility</li>
+<li>Cross-selling and repeat business insights</li>
+<li>Portfolio and relationship overview</li>
+<li>Actionable business context for growth</li>
+</ul>
+<p class="text-sm text-stone-700 leading-relaxed border-t border-stone-200 pt-3">
+                  Business Desk helps reveal the business patterns that are already there, so the next opportunity is easier to identify.
+                </p>
+</div>
+</div>
+
+<div class="flex flex-col gap-6">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center">
+<div class="lg:col-span-7 order-2 lg:order-1 card-surface p-2.5 sm:p-4 overflow-hidden bg-white shadow-lg">
+<img alt="Business Desk customer management screen" class="w-full h-auto rounded-xl object-contain" height="1536" loading="lazy" src="assets/7.webp" width="2752"/>
+<div class="mt-2 text-[10px] sm:text-[11px] font-semibold uppercase tracking-[0.16em] text-stone-500">Actual product interface</div>
+</div>
+<div class="lg:col-span-5 order-1 lg:order-2 flex flex-col gap-3">
+<span class="text-[10px] sm:text-[11px] font-bold tracking-[0.22em] uppercase text-amber-700">Customer visibility</span>
+<h3 class="text-2xl sm:text-3xl font-extrabold text-stone-900 tracking-tight">Customer records without the chaos</h3>
+<p class="text-base text-stone-600 leading-relaxed">
+                  This view shows how customer history and relationship context stay in one place instead of being buried across multiple tools.
+                </p>
+</div>
+</div>
+
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center">
+<div class="lg:col-span-5 flex flex-col gap-3">
+<span class="text-[10px] sm:text-[11px] font-bold tracking-[0.22em] uppercase text-emerald-700">Communication flow</span>
+<h3 class="text-2xl sm:text-3xl font-extrabold text-stone-900 tracking-tight">WhatsApp becomes a working business layer</h3>
+<p class="text-base text-stone-600 leading-relaxed">
+                  The business can keep using WhatsApp while making that communication visible, trackable, and connected to the customer record.
+                </p>
+</div>
+<div class="lg:col-span-7 card-surface p-2.5 sm:p-4 overflow-hidden bg-white shadow-lg">
+<img alt="Business Desk WhatsApp CRM hub screen" class="w-full h-auto rounded-xl object-contain" height="1536" loading="lazy" src="assets/8.webp" width="2752"/>
+<div class="mt-2 text-[10px] sm:text-[11px] font-semibold uppercase tracking-[0.16em] text-stone-500">Built for operational use</div>
+</div>
+</div>
+
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center">
+<div class="lg:col-span-7 order-2 lg:order-1 card-surface p-2.5 sm:p-4 overflow-hidden bg-white shadow-lg">
+<img alt="Business Desk cross-selling workflow" class="w-full h-auto rounded-xl object-contain" height="1536" loading="lazy" src="assets/10.webp" width="2752"/>
+<div class="mt-2 text-[10px] sm:text-[11px] font-semibold uppercase tracking-[0.16em] text-stone-500">Example workflow</div>
+</div>
+<div class="lg:col-span-5 order-1 lg:order-2 flex flex-col gap-3">
+<span class="text-[10px] sm:text-[11px] font-bold tracking-[0.22em] uppercase text-[#A33900]">Growth opportunity</span>
+<h3 class="text-2xl sm:text-3xl font-extrabold text-stone-900 tracking-tight">Identify more from the existing customer base</h3>
+<p class="text-base text-stone-600 leading-relaxed">
+                  This helps the business see repeat opportunities and customer potential without depending on guesswork or scattered records.
+                </p>
+</div>
+</div>
+
+<div class="w-full card-surface p-6 sm:p-8 flex flex-col gap-6 bg-white border border-stone-200/80">
+<div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 border-b border-stone-200/70 pb-6">
+<div>
+<span class="text-[10px] sm:text-[11px] font-bold tracking-[0.22em] uppercase text-amber-700">Owner clarity</span>
+<h3 class="text-2xl sm:text-3xl font-extrabold text-stone-900 tracking-tight mt-2">Business overview without chasing reports</h3>
+</div>
+</div>
+<div class="overflow-hidden rounded-xl bg-[#FBF9F5] p-2 border border-stone-200">
+<img alt="Business Desk executive dashboard with business overview" class="w-full h-auto rounded-lg object-contain" height="1536" loading="lazy" src="assets/9.webp" width="2752"/>
+</div>
+<div class="text-[10px] sm:text-[11px] font-semibold uppercase tracking-[0.16em] text-stone-500">Management layer</div>
+<p class="text-sm sm:text-base text-stone-600 leading-relaxed">
+              The owner dashboard matters because it turns fragmented operational info into a clear view of what is moving, what is pending, and what deserves attention.
+            </p>
+</div>
+</div>
+
+<div class="w-full rounded-[30px] bg-stone-900 text-white p-7 sm:p-10 shadow-2xl border border-stone-800">
+<div class="flex flex-col items-center text-center gap-4 max-w-3xl mx-auto">
+<span class="text-[10px] sm:text-[11px] font-bold tracking-[0.22em] uppercase text-[#ffb599]">Product CTA</span>
+<h3 class="text-2xl sm:text-4xl font-extrabold text-white tracking-tight leading-tight">
+              See how Business Desk would fit your business
+            </h3>
+<p class="text-sm sm:text-base text-stone-300 leading-relaxed">
+              Keep the tools you already trust. Add the management layer your business is missing.
+            </p>
+<a class="bg-[#ea580c] hover:bg-[#c2410c] text-white font-semibold px-7 py-3.5 rounded-full text-sm inline-flex items-center gap-2 shadow-sm transition-all duration-200 hover:scale-[1.02] active:scale-[0.98]" data-contact="whatsapp" href="https://wa.me/917988930154?text=Hi%20Axois%20Studios%2C%20I%27d%20like%20to%20discuss%20how%20Business%20Desk%20could%20fit%20my%20business." rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[#62df7d] text-[20px]">chat</span>
+<span>See how Business Desk fits</span>
+</a>
+</div>
+</div>
+
+<div class="w-full rounded-[30px] border border-stone-200 bg-[#FBF9F5] p-6 sm:p-8">
+  <div class="max-w-3xl">
+    <p class="text-[10px] sm:text-[11px] font-bold tracking-[0.22em] uppercase text-[#A33900]">Who is this for?</p>
+    <h3 class="mt-3 text-2xl sm:text-3xl font-extrabold text-stone-900 tracking-tight">Business Desk is designed for businesses where:</h3>
+  </div>
+  <div class="mt-6 grid grid-cols-1 md:grid-cols-2 gap-4 text-sm sm:text-base text-stone-700">
+    <div class="rounded-2xl border border-stone-200 bg-white p-4">Customer communication is scattered across chats, people and notes.</div>
+    <div class="rounded-2xl border border-stone-200 bg-white p-4">Owners need visibility without asking the team for updates repeatedly.</div>
+    <div class="rounded-2xl border border-stone-200 bg-white p-4">Existing software handles billing or accounts, but not management across the business.</div>
+    <div class="rounded-2xl border border-stone-200 bg-white p-4">Important work still happens in WhatsApp, Excel or memory instead of a single system.</div>
+  </div>
+</div>
+</div>
+</section>
+
+<!-- SECTION 06: EMOTIONAL “BUSINESS NOT DATA ENTRY” SECTION (ANCHOR) -->
+<!-- SECTION 06: EMOTIONAL “BUSINESS NOT DATA ENTRY” SECTION (ANCHOR) -->
+<section class="relative w-full py-28 lg:py-36 bg-[#FBF9F5] border-y border-stone-200/70 overflow-hidden" style="background: radial-gradient(circle at 50% 25%, rgba(234, 88, 12, 0.05) 0%, rgb(251, 248, 255) 70%);">
+<div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center text-center gap-10 sm:gap-14 relative z-10">
+<div class="flex flex-col items-center gap-5 max-w-3xl mx-auto">
+<div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-orange-500/10 border border-orange-500/20 text-[#A33900] text-xs font-semibold tracking-widest uppercase">
+<span class="w-1.5 h-1.5 rounded-full bg-[#A33900]"></span>
+<span>THE POINT IS SIMPLE</span>
+</div>
+<h2 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-stone-900 tracking-tight leading-[1.1]">
+              Business chalana hai.<br/>
+<span class="text-[#A33900]">Data entry nahi.</span>
+</h2>
+<p class="text-base sm:text-lg text-stone-600 max-w-2xl leading-relaxed font-normal">
+              Aapko software ka expert banne ki zaroorat nahi.<br class="hidden sm:inline"/>
+              Aapko 17 dashboards. 42 reports. 100 settings. Aur ek training manual bhi nahi chahiye. 😵‍💫
+            </p>
+</div>
+<div class="w-full max-w-2xl rounded-2xl bg-white/95 border border-orange-500/20 p-6 sm:p-8 shadow-md">
+<p class="text-lg sm:text-2xl text-stone-700 leading-snug font-normal">
+              Aapko bas apna kaam karna hai.<br class="hidden sm:inline"/>
+<strong class="text-stone-900 font-bold">System ko kaam easy banana hai.</strong>
+</p>
+</div>
+<div class="w-full rounded-2xl sm:rounded-3xl bg-white p-2 sm:p-4 shadow-2xl border border-stone-200/80 overflow-hidden">
+<img alt="Business owner dashboard with complete operational overview" class="w-full h-auto rounded-xl sm:rounded-2xl object-contain" height="1536" loading="lazy" src="assets/9.webp" width="2752"/>
+</div>
+</div>
+</section>
+<!-- SECTION 07: HOW IT WORKS / COEXISTENCE GUARANTEE -->
+<section class="w-full bg-[#FBF9F5] py-20 lg:py-28 border-b border-stone-200/70">
+<div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col gap-12 sm:gap-14">
+<div class="flex flex-col items-center text-center gap-3.5 max-w-3xl mx-auto">
+<span class="text-xs font-semibold tracking-widest uppercase text-emerald-800 bg-emerald-50 border border-emerald-200/60 px-3.5 py-1 rounded-full inline-flex items-center gap-1.5">
+              Coexistence Guarantee
+            </span>
+<h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-stone-900 tracking-tight leading-tight">
+              MARG/Tally chhodna nahi hai. 😌
+            </h2>
+<p class="text-lg sm:text-xl text-stone-600 font-medium">
+              Jo chal raha hai, woh chalne do.
+            </p>
+</div>
+<div class="w-full card-surface p-2 sm:p-4 overflow-hidden shadow-xl border border-stone-200/80 bg-white">
+<img alt="Coexistence architecture connecting MARG and Tally with Business Desk" class="w-full h-auto rounded-xl object-contain" height="1536" loading="lazy" src="assets/13.webp" width="2752"/>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6 items-stretch">
+<div class="md:col-span-6 card-surface p-6 sm:p-8 flex flex-col justify-between gap-6 border border-stone-200/80 bg-white">
+<div class="flex flex-col gap-3">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-stone-500 text-[20px]">lock_clock</span>
+<span class="text-xs font-bold text-stone-500 uppercase tracking-wider">EXISTING SYSTEM</span>
+</div>
+<h3 class="text-xl sm:text-2xl font-bold text-stone-900 tracking-tight">Billing, Stock &amp; Accounts</h3>
+<p class="text-sm sm:text-base text-stone-600 leading-relaxed">
+                  MARG / Tally continues doing what it already does best. Settle ho chuke accounting aur tax workflows ko chhedne ki zaroorat nahi.
+                </p>
+</div>
+<div class="flex flex-wrap items-center gap-2 pt-2 border-t border-stone-100 text-xs font-semibold text-stone-700">
+<span class="px-3 py-1 rounded-full bg-stone-100">GST Billing</span>
+<span class="px-3 py-1 rounded-full bg-stone-100">Tax Ledgers</span>
+<span class="px-3 py-1 rounded-full bg-stone-100">Accounts</span>
+</div>
+</div>
+<div class="md:col-span-6 card-surface p-6 sm:p-8 flex flex-col justify-between gap-6 border-2 border-orange-500/20 bg-[#FDF6F0]">
+<div class="flex flex-col gap-3">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[#A33900] text-[20px]">add_circle</span>
+<span class="text-xs font-bold text-[#A33900] uppercase tracking-wider">+ BUSINESS DESK LAYER</span>
+</div>
+<h3 class="text-xl sm:text-2xl font-bold text-stone-900 tracking-tight">Customers, WhatsApp &amp; Visibility</h3>
+<p class="text-sm sm:text-base text-stone-700 leading-relaxed">
+                  Day-to-day operations ko ek fresh, actionable interface milta hai jisse owner aur team ko 100% control aur clarity milti hai.
+                </p>
+</div>
+<div class="flex flex-wrap items-center gap-2 pt-2 border-t border-orange-500/15 text-xs font-semibold text-[#A33900]">
+<span class="px-3 py-1 rounded-full bg-white border border-orange-500/20">WhatsApp Desk</span>
+<span class="px-3 py-1 rounded-full bg-white border border-orange-500/20">Customer Balances</span>
+<span class="px-3 py-1 rounded-full bg-white border border-orange-500/20">Daily Reports</span>
+</div>
+</div>
+</div>
+<div class="w-full max-w-3xl mx-auto rounded-2xl bg-stone-900 text-white p-6 sm:p-8 shadow-xl text-center flex flex-col items-center gap-2">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 text-xs font-medium text-stone-300">
+<span class="material-symbols-outlined text-[#62df7d] text-[16px]">verified</span>
+<span>Zero Migration Risk</span>
+</div>
+<p class="text-xl sm:text-2xl font-extrabold text-white tracking-tight leading-snug">
+              Purana system rakho. <span class="text-[#ffb599]">Naya control le lo.</span>
+</p>
+</div>
+</div>
+</section>
+<!-- SECTION 08: DARK BESPOKE POSITIONING (ANCHOR) -->
+<section id="how-we-work" class="w-full bg-[#121214] text-white py-24 lg:py-32 border-y border-stone-800 relative overflow-hidden" style="background-image: radial-gradient(at 60% 25%, rgba(234, 88, 12, 0.08) 0%, rgba(18, 18, 20, 0) 75%);">
+<div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col gap-12 lg:gap-16 relative z-10">
+<div class="max-w-3xl">
+<div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-orange-500/10 border border-orange-500/20 text-orange-400 text-xs font-semibold tracking-wider uppercase">
+<span class="w-1.5 h-1.5 rounded-full bg-orange-400"></span>
+<span>How We Work</span>
+</div>
+<h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight leading-[1.12] mt-6">
+                We understand the business before we shape the system.
+              </h2>
+<p class="text-base sm:text-lg text-stone-300 leading-relaxed font-normal mt-6 max-w-2xl">
+                We start with how the business actually works today, then build around the places where customers, people, tools and workflows need more clarity.
+              </p>
+</div>
+
+<div class="relative">
+<div class="hidden lg:block absolute left-[10%] right-[10%] top-5 h-px bg-stone-700"></div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-5 lg:gap-4">
+<div class="relative flex flex-col gap-3 border-t border-stone-700 pt-5 lg:border-0 lg:pt-0">
+<span class="relative z-10 flex h-10 w-10 items-center justify-center rounded-full border border-orange-400/60 bg-[#121214] text-sm font-bold text-orange-300">01</span>
+<h3 class="text-xl font-bold text-white">Understand</h3>
+<p class="text-sm text-stone-400 leading-relaxed">We understand how the business currently works.</p>
+</div>
+<div class="relative flex flex-col gap-3 border-t border-stone-700 pt-5 lg:border-0 lg:pt-0">
+<span class="relative z-10 flex h-10 w-10 items-center justify-center rounded-full border border-orange-400/60 bg-[#121214] text-sm font-bold text-orange-300">02</span>
+<h3 class="text-xl font-bold text-white">Map</h3>
+<p class="text-sm text-stone-400 leading-relaxed">We identify where information, people, tools and workflows break down.</p>
+</div>
+<div class="relative flex flex-col gap-3 border-t border-stone-700 pt-5 lg:border-0 lg:pt-0">
+<span class="relative z-10 flex h-10 w-10 items-center justify-center rounded-full border border-orange-400/60 bg-[#121214] text-sm font-bold text-orange-300">03</span>
+<h3 class="text-xl font-bold text-white">Design</h3>
+<p class="text-sm text-stone-400 leading-relaxed">We design the management system around the actual workflow.</p>
+</div>
+<div class="relative flex flex-col gap-3 border-t border-stone-700 pt-5 lg:border-0 lg:pt-0">
+<span class="relative z-10 flex h-10 w-10 items-center justify-center rounded-full border border-orange-400/60 bg-[#121214] text-sm font-bold text-orange-300">04</span>
+<h3 class="text-xl font-bold text-white">Build</h3>
+<p class="text-sm text-stone-400 leading-relaxed">We build and configure the required system.</p>
+</div>
+<div class="relative flex flex-col gap-3 border-t border-stone-700 pt-5 lg:border-0 lg:pt-0 sm:col-span-2 lg:col-span-1">
+<span class="relative z-10 flex h-10 w-10 items-center justify-center rounded-full border border-orange-400/60 bg-[#121214] text-sm font-bold text-orange-300">05</span>
+<h3 class="text-xl font-bold text-white">Improve</h3>
+<p class="text-sm text-stone-400 leading-relaxed">We refine the system based on real usage.</p>
+</div>
+</div>
+</div>
+
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center border-t border-stone-800 pt-10">
+<div class="lg:col-span-8 p-5 sm:p-6 rounded-2xl bg-zinc-900/90 border border-zinc-800">
+<p class="text-[10px] sm:text-[11px] font-bold tracking-[0.2em] uppercase text-orange-300">The principle</p>
+<p class="text-xl sm:text-2xl font-bold text-white leading-snug mt-3">
+                  We don't start by asking you to change your business.<br class="hidden sm:inline"/>
+<span class="text-stone-300">We start by understanding how it already works.</span>
+                </p>
+<p class="text-sm text-stone-400 leading-relaxed mt-4">
+                  That is why MARG and Tally can stay in place for billing, stock and accounts while Business Desk adds the management and visibility layer around them.
+                </p>
+</div>
+<div class="lg:col-span-4 flex lg:justify-end">
+<a class="bg-[#ea580c] hover:bg-[#c2410c] text-white font-semibold px-6 py-3.5 rounded-full text-sm inline-flex items-center justify-center gap-2 shadow-sm transition-all duration-200 hover:scale-[1.02] active:scale-[0.98]" data-contact="whatsapp" href="https://wa.me/917988930154?text=Hi%20Axois%20Studios%2C%20I%27d%20like%20to%20show%20you%20how%20my%20business%20works." rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[#62df7d] text-[18px]">chat</span>
+<span>Show Us How Your Business Works →</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 09: HUMAN / FOUNDER TOUCH & TESTIMONIAL -->
+<section class="w-full bg-[#FBF9F5] py-20 lg:py-28 border-y border-stone-200/70 relative">
+<div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col gap-14 sm:gap-16">
+<div class="flex flex-col items-center text-center gap-3.5 max-w-3xl mx-auto">
+<span class="text-xs font-semibold tracking-widest uppercase text-amber-700 bg-amber-50 border border-amber-200/60 px-3.5 py-1 rounded-full inline-flex items-center gap-1.5">
+              ON-GROUND UNDERSTANDING
+            </span>
+<h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-stone-900 tracking-tight leading-[1.12]">
+              Software hum banayenge.<br/>
+<span class="text-[#A33900]">Pehle business samjhenge.</span>
+</h2>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
+<div class="lg:col-span-6 flex justify-center">
+<div class="w-full card-surface p-2 sm:p-3 overflow-hidden rounded-2xl shadow-xl border border-stone-200/80 bg-white">
+<img alt="Business owner reviewing operations with Business Desk" class="w-full h-auto rounded-xl object-contain" height="1536" loading="lazy" src="assets/15.webp" width="2752"/>
+</div>
+</div>
+<div class="lg:col-span-6 flex flex-col items-start gap-6">
+<p class="text-lg sm:text-xl font-semibold text-stone-900 leading-snug">
+                Aapko generic demo nahi dikhayenge.<br/>
+<span class="text-stone-600 font-normal">Pehle samjhenge:</span>
+</p>
+<div class="flex flex-col gap-3 w-full">
+<div class="flex items-start gap-3 p-3.5 rounded-xl bg-white border border-stone-200/70 shadow-sm">
+<span class="material-symbols-outlined text-[#A33900] text-[20px] shrink-0 mt-0.5">arrow_forward</span>
+<span class="text-sm sm:text-base text-stone-800 font-medium">Aap kaise sell karte ho.</span>
+</div>
+<div class="flex items-start gap-3 p-3.5 rounded-xl bg-white border border-stone-200/70 shadow-sm">
+<span class="material-symbols-outlined text-[#A33900] text-[20px] shrink-0 mt-0.5">arrow_forward</span>
+<span class="text-sm sm:text-base text-stone-800 font-medium">Customers kaise handle karte ho.</span>
+</div>
+<div class="flex items-start gap-3 p-3.5 rounded-xl bg-white border border-stone-200/70 shadow-sm">
+<span class="material-symbols-outlined text-[#A33900] text-[20px] shrink-0 mt-0.5">arrow_forward</span>
+<span class="text-sm sm:text-base text-stone-800 font-medium">Team kaise kaam karti hai.</span>
+</div>
+<div class="flex items-start gap-3 p-3.5 rounded-xl bg-white border border-stone-200/70 shadow-sm">
+<span class="material-symbols-outlined text-[#A33900] text-[20px] shrink-0 mt-0.5">arrow_forward</span>
+<span class="text-sm sm:text-base text-stone-800 font-medium">Aur owner ko kya dekhna padta hai.</span>
+</div>
+</div>
+<p class="text-base sm:text-lg text-[#A33900] font-bold">
+                Phir system uske according set hoga.
+              </p>
+<div class="pt-2">
+<a class="bg-stone-900 hover:bg-black text-white font-semibold px-8 py-4 rounded-full text-sm inline-flex items-center gap-2.5 shadow-md transition-all duration-200 hover:scale-[1.02] active:scale-[0.98]" data-contact="whatsapp" href="https://wa.me/917988930154?text=Hi%20Axois%20Studios%2C%20I%27d%20like%20to%20see%20Business%20Desk." rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[#62df7d] text-[20px]">chat</span>
+<span>Mere Business Ke Liye Dikhao →</span>
+</a>
+</div>
+</div>
+</div>
+<!-- REAL-WORLD PROOF -->
+<div class="w-full flex flex-col gap-5 mt-2">
+<div class="text-center max-w-2xl mx-auto">
+<span class="text-xs font-semibold tracking-widest uppercase text-amber-700 bg-amber-50 border border-amber-200/60 px-3.5 py-1 rounded-full inline-flex items-center gap-1.5">
+    REAL-WORLD PROOF
+  </span>
+<h3 class="text-2xl sm:text-3xl font-extrabold text-stone-900 tracking-tight mt-3">
+    The product isn't a concept.
+  </h3>
+<p class="text-sm sm:text-base text-stone-600 leading-relaxed mt-2">
+    This is the kind of system we have already built and implemented for businesses.
+  </p>
+</div>
+<div class="w-full flex flex-col gap-4">
+<div class="card-surface p-2 sm:p-4 overflow-hidden rounded-2xl shadow-xl border border-stone-200/80 bg-white">
+<img alt="Business Desk case study workflow and implementation example" class="w-full h-auto rounded-xl object-contain" height="1536" loading="lazy" src="assets/16.webp" width="2752"/>
+</div>
+</div>
+</div>
+</div></section>
+<!-- SECTION 10: SHORT PHILOSOPHY / CHALNE DO -->
+<section class="w-full bg-[#F5F2EB] py-20 lg:py-28 border-y border-stone-200/70">
+<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center text-center gap-5">
+<div class="inline-flex items-center px-4 py-1.5 rounded-full bg-white/90 border border-stone-200 text-stone-700 text-xs sm:text-sm font-medium tracking-wide shadow-sm">
+<span>“Lekin humara current system toh chal raha hai…”</span>
+</div>
+<h2 class="text-5xl sm:text-7xl lg:text-8xl font-extrabold text-[#A33900] tracking-tight leading-none">
+            Chalne do.
+          </h2>
+<p class="text-base sm:text-lg text-stone-700 max-w-2xl mx-auto leading-relaxed pt-1 font-normal">
+            Humara goal aapka existing system todna nahi hai. Goal hai: Jo cheezein abhi diary, WhatsApp, Excel aur memory mein chal rahi hain — unhe ek simple system mein lana.
+          </p>
+</div>
+</section>
+
+<!-- SECTION 11: TRANSPARENT PRICING -->
+<section class="w-full bg-[#FBF9F5] py-20 lg:py-28 border-b border-stone-200/70" id="pricing">
+<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center gap-10">
+<div class="flex flex-col items-center text-center gap-3 max-w-2xl">
+<span class="text-xs font-semibold tracking-widest uppercase text-amber-700 bg-amber-50 border border-amber-200/60 px-3.5 py-1 rounded-full inline-flex items-center gap-1.5">
+              TRANSPARENT PRICING
+            </span>
+<h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-stone-900 tracking-tight leading-tight">
+              Start small. Build around your business.
+            </h2>
+</div>
+<div class="w-full max-w-2xl rounded-3xl bg-[#18181B] text-white p-7 sm:p-10 shadow-2xl relative overflow-hidden flex flex-col gap-7 border border-stone-800">
+<div class="flex flex-wrap items-center justify-between gap-3">
+<span class="inline-flex items-center px-3.5 py-1.5 rounded-full bg-orange-500/15 border border-orange-500/20 text-[#ffb599] text-xs font-semibold tracking-wide">
+                Current implementation offer
+              </span>
+<span class="text-xs text-stone-400 uppercase tracking-wider font-medium">
+                Business-specific setup &amp; onboarding
+              </span>
+</div>
+<div class="flex flex-col gap-1">
+<div class="flex flex-col sm:flex-row sm:items-baseline gap-2 sm:gap-3">
+<span class="text-4xl sm:text-5xl font-black text-white tracking-tight leading-none">₹24,499</span>
+<span class="text-base sm:text-lg text-stone-300 font-semibold">one-time</span>
+<span class="text-sm sm:text-base text-stone-500 line-through sm:ml-2">₹34,999</span>
+</div>
+</div>
+<div class="p-4 rounded-xl bg-white/10 border border-white/20">
+<p class="text-sm sm:text-base text-white font-medium">
+                Payment terms: <span class="text-[#ffb599] font-bold">50% to start. 50% after completion.</span>
+</p>
+</div>
+<div class="text-xs sm:text-sm text-stone-400 leading-relaxed">
+  Includes the agreed modules and implementation scope discussed before work begins.
+  Larger or additional workflows are scoped separately.
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5 py-2 border-y border-stone-800">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-[#62df7d] text-[20px]">check_circle</span>
+<span class="text-sm sm:text-base text-stone-200">Business-specific system</span>
+</div>
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-[#62df7d] text-[20px]">check_circle</span>
+<span class="text-sm sm:text-base text-stone-200">Setup &amp; implementation</span>
+</div>
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-[#62df7d] text-[20px]">check_circle</span>
+<span class="text-sm sm:text-base text-stone-200">Agreed modules</span>
+</div>
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-[#62df7d] text-[20px]">check_circle</span>
+<span class="text-sm sm:text-base text-stone-200">Basic training</span>
+</div>
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-[#62df7d] text-[20px]">check_circle</span>
+<span class="text-sm sm:text-base text-stone-200">Support</span>
+</div>
+</div>
+<div class="p-4 sm:p-5 rounded-2xl bg-stone-900/90 border border-stone-800 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+<div class="flex flex-col">
+<span class="text-xs text-stone-400 uppercase tracking-wider font-semibold">Maintenance &amp; Hosting</span>
+<span class="text-base text-stone-200 font-bold mt-0.5">Maintenance: ₹899/month</span>
+</div>
+<span class="px-3 py-1 rounded-full bg-emerald-950 border border-emerald-800/60 text-emerald-400 text-xs font-semibold shrink-0">
+                First 6 months FREE.
+              </span>
+</div>
+<div>
+<a class="w-full inline-flex items-center justify-center gap-2.5 px-7 py-4 rounded-full bg-[#ea580c] hover:bg-[#c2410c] text-white font-bold text-base shadow-lg transition-all duration-200 hover:scale-[1.02] active:scale-[0.98]" data-contact="whatsapp" href="https://wa.me/917988930154?text=Hi%20Axois%2C%20I%27d%20like%20to%20discuss%20Business%20Desk%20onboarding%20and%20the%20current%20offer." rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[22px]">chat</span>
+<span>Start a Business Desk Discussion</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 12: FREQUENTLY ASKED QUESTIONS -->
+<section class="w-full bg-[#F5F2EB] py-20 lg:py-24 border-b border-stone-200/70">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-[1.2fr_1.8fr] gap-8 items-center">
+    <div class="rounded-3xl bg-white border border-stone-200 p-5 shadow-sm">
+      <div class="w-24 h-24 rounded-full bg-[#F4E7DB] flex items-center justify-center text-3xl font-extrabold text-[#A33900]">A</div>
+      <h3 class="mt-5 text-2xl font-extrabold text-stone-900">Built by people who obsess over how businesses work.</h3>
+    </div>
+    <div>
+      <span class="text-xs font-semibold tracking-widest uppercase text-[#A33900]">Founder-led</span>
+      <p class="mt-4 text-lg text-stone-700 leading-relaxed">Axois exists to help businesses stop depending on scattered tools, memory and manual follow-ups. The goal is not more software for the sake of software — it is more clarity, more control, and less operational chaos.</p>
+      <p class="mt-4 text-base text-stone-600 leading-relaxed">We don't start by forcing a business into a generic system. We start by understanding how the business actually runs, then we build the missing layer around it.</p>
+    </div>
+  </div>
+</section>
+<section class="w-full bg-[#FBF9F5] py-20 lg:py-28 border-b border-stone-200/70" id="faqs">
+<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col gap-10">
+<div class="flex flex-col items-center text-center gap-3">
+<div class="flex items-center gap-2">
+<a href="#proof" class="inline-flex items-center gap-2 text-[10px] sm:text-[11px] font-bold tracking-[0.18em] uppercase text-[#A33900] bg-amber-50 border border-amber-200/60 px-3.5 py-1 rounded-full">Proof <span>→</span></a>
+</div>
+<span class="text-xs font-semibold tracking-widest uppercase text-amber-700 bg-amber-50 border border-amber-200/60 px-3.5 py-1 rounded-full inline-flex items-center gap-1.5">
+              Clear Answers
+            </span>
+<h2 class="text-3xl sm:text-4xl font-extrabold text-stone-900 tracking-tight">
+              Frequently asked questions
+            </h2>
+</div>
+<div class="flex flex-col divide-y divide-stone-200 border-y border-stone-200"><div class="py-5 flex flex-col gap-2.5">
+<button aria-expanded="false" class="faq-toggle w-full flex items-center justify-between text-left gap-4 font-bold text-lg sm:text-xl text-stone-900 focus:outline-none">
+<span>Have you built this for a real business?</span>
+<span class="material-symbols-outlined text-stone-500 shrink-0 transition-transform duration-200 text-[24px]">add</span>
+</button>
+<div class="hidden text-sm sm:text-base text-stone-600 leading-relaxed pr-6">
+                Haan. Business Desk is based on working systems we have already built and implemented. See the proof section above for the kinds of operational problems and workflows we have already worked on.
+              </div>
+</div>
+<div class="py-5 flex flex-col gap-2.5">
+<button aria-expanded="false" class="faq-toggle w-full flex items-center justify-between text-left gap-4 font-bold text-lg sm:text-xl text-stone-900 focus:outline-none">
+<span>Kya MARG/Tally replace karna padega?</span>
+<span class="material-symbols-outlined text-stone-500 shrink-0 transition-transform duration-200 text-[24px]">add</span>
+</button>
+<div class="hidden text-sm sm:text-base text-stone-600 leading-relaxed pr-6">
+                Nahi, bilkul nahi. MARG ya Tally aapki billing, accounting aur GST ke liye jaise chalte hain waise hi chalenge. Business Desk unke upar ek management layer banata hai jo customer tracking, WhatsApp CRM aur owner visibility sambhalta hai.
+              </div>
+</div>
+<div class="py-5 flex flex-col gap-2.5">
+<button aria-expanded="false" class="faq-toggle w-full flex items-center justify-between text-left gap-4 font-bold text-lg sm:text-xl text-stone-900 focus:outline-none">
+<span>Kya system mere business ke hisaab se banega?</span>
+<span class="material-symbols-outlined text-stone-500 shrink-0 transition-transform duration-200 text-[24px]">add</span>
+</button>
+<div class="hidden text-sm sm:text-base text-stone-600 leading-relaxed pr-6">
+                Haan. Hum generic software bech kar gayab nahi hote. Pehle aapke workflow ko samjhte hain, fir aapki requirements ke mutabiq modules configure karke dete hain.
+              </div>
+</div>
+<div class="py-5 flex flex-col gap-2.5">
+<button aria-expanded="false" class="faq-toggle w-full flex items-center justify-between text-left gap-4 font-bold text-lg sm:text-xl text-stone-900 focus:outline-none">
+<span>Kya mujhe pura data migrate karna padega?</span>
+<span class="material-symbols-outlined text-stone-500 shrink-0 transition-transform duration-200 text-[24px]">add</span>
+</button>
+<div class="hidden text-sm sm:text-base text-stone-600 leading-relaxed pr-6">
+                Nahi. Zero forced migration. Jo purana data jahan hai wahi rahega. Naye system mein sirf zaroori customer list aur starting data configure hota hai bina kisi disruption ke.
+              </div>
+</div>
+<div class="py-5 flex flex-col gap-2.5">
+<button aria-expanded="false" class="faq-toggle w-full flex items-center justify-between text-left gap-4 font-bold text-lg sm:text-xl text-stone-900 focus:outline-none">
+<span>Kya meri team ise use kar payegi?</span>
+<span class="material-symbols-outlined text-stone-500 shrink-0 transition-transform duration-200 text-[24px]">add</span>
+</button>
+<div class="hidden text-sm sm:text-base text-stone-600 leading-relaxed pr-6">
+                Aapki team already WhatsApp use karti hai. Humara interface utna hi simple hai. Hum setup ke sath team ke liye basic training aur guided walkthroughs provide karte hain.
+              </div>
+</div>
+<div class="py-5 flex flex-col gap-2.5">
+<button aria-expanded="false" class="faq-toggle w-full flex items-center justify-between text-left gap-4 font-bold text-lg sm:text-xl text-stone-900 focus:outline-none">
+<span>Kitna time lagega?</span>
+<span class="material-symbols-outlined text-stone-500 shrink-0 transition-transform duration-200 text-[24px]">add</span>
+</button>
+<div class="hidden text-sm sm:text-base text-stone-600 leading-relaxed pr-6">
+                Average implementation 7 se 14 din mein complete ho jata hai. Pehle 50% advance pe kaam start hota hai, aur poora live hone ke baad baaki 50%.
+              </div>
+</div>
+<div class="py-5 flex flex-col gap-2.5">
+<button aria-expanded="false" class="faq-toggle w-full flex items-center justify-between text-left gap-4 font-bold text-lg sm:text-xl text-stone-900 focus:outline-none">
+<span>Kya mobile se use kar sakte hain?</span>
+<span class="material-symbols-outlined text-stone-500 shrink-0 transition-transform duration-200 text-[24px]">add</span>
+</button>
+<div class="hidden text-sm sm:text-base text-stone-600 leading-relaxed pr-6">
+                Haan. Owner dashboard aur WhatsApp Hub mobile responsive hain, jisse aap kisi bhi waqt kahin se bhi live status dekh sakein.
+              </div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 13: FINAL CTA SECTION (CLIMAX / ACTION) -->
+<section class="w-full py-20 lg:py-28 bg-[#FBF9F5]">
+<div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="rounded-3xl bg-zinc-950 text-white p-7 sm:p-12 lg:p-16 shadow-2xl relative overflow-hidden flex flex-col gap-8 sm:gap-12 items-center text-center border border-zinc-800" style="background-image: radial-gradient(circle at 50% 15%, rgba(204, 73, 0, 0.35) 0%, transparent 65%);">
+<div class="w-full rounded-2xl bg-zinc-950 p-2 sm:p-3 shadow-2xl overflow-hidden relative z-10 border border-zinc-800/80 group hover:border-zinc-700 transition-all duration-300">
+<img alt="Business Desk control centre showing a live business overview" class="w-full h-auto rounded-xl object-contain" height="1536" loading="lazy" src="assets/18.webp" width="2752"/>
+</div>
+<div class="flex flex-col gap-4 max-w-2xl relative z-10">
+<span class="text-[10px] sm:text-[11px] font-bold tracking-[0.22em] uppercase text-[#ffb599]">Start with the business</span>
+<h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight leading-[1.12]">
+                Tell us how your business works.
+</h2>
+<p class="text-base sm:text-lg text-stone-300 max-w-xl mx-auto leading-relaxed pt-1">
+                We'll look at where the friction is, what is already working, and what we would build around it.
+              </p>
+</div>
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 relative z-10 w-full sm:w-auto">
+<a class="bg-[#ea580c] hover:bg-[#c2410c] text-white font-bold px-8 py-4 rounded-full text-sm sm:text-base inline-flex items-center justify-center gap-2.5 shadow-lg transition-all duration-200 hover:scale-[1.02] active:scale-[0.98]" data-contact="whatsapp" href="https://wa.me/917988930154?text=Hi%20Axois%2C%20I%27d%20like%20to%20start%20a%20business%20discussion%20about%20how%20my%20business%20works." rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[20px]">chat</span>
+<span>Tell Us How Your Business Works →</span>
+</a>
+<a class="bg-white/10 hover:bg-white/15 text-white border border-white/20 font-semibold px-8 py-4 rounded-full text-sm sm:text-base inline-flex items-center justify-center gap-2 transition-all duration-200 hover:scale-[1.02] active:scale-[0.98] shadow-sm" data-contact="phone" href="tel:+917988930154">
+<span class="material-symbols-outlined text-stone-300 text-[20px]">call</span>
+<span>Talk to Axois</span>
+</a>
+</div>
+<p class="text-xs sm:text-sm text-stone-400 relative z-10">
+              15-minute conversation · No obligation
+            </p>
+</div>
+</div>
+</section>
+</div>
+</main>
+
+<section id="about" class="w-full bg-[#F5F2EB] py-16 border-t border-stone-200/70">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row gap-8 justify-between items-start">
+    <div>
+      <span class="text-xs font-semibold tracking-widest uppercase text-stone-500">About Axois Studios</span>
+      <h2 class="text-2xl sm:text-3xl font-extrabold text-stone-900 mt-3">We build practical digital infrastructure.</h2>
+    </div>
+    <p class="max-w-xl text-sm sm:text-base text-stone-600 leading-relaxed">
+      Axois Studios is the company behind Business Desk. We also build business websites and experiment with workflow automation — using real business problems as the starting point for what we build next.
+    </p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="w-full bg-[#141416] text-stone-400 border-t border-stone-800">
+<div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-14 sm:py-16">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-10 pb-12 border-b border-stone-800">
+<div class="md:col-span-6 flex flex-col gap-3">
+<div class="flex items-center gap-3">
+<img alt="Axois Studios Business Desk logo" class="h-10 w-auto object-contain brightness-0 invert opacity-95" height="285" loading="lazy" src="assets/logo.webp" width="820"/>
+</div>
+<p class="text-sm text-stone-400 max-w-sm leading-relaxed mt-1">
+            Simple systems for growing Indian businesses.
+          </p><p class="text-xs text-stone-500 mt-1">A product by Axois Studios</p>
+</div>
+<div class="md:col-span-3 flex flex-col gap-3">
+<h3 class="text-xs uppercase tracking-wider font-semibold text-stone-300">Company</h3>
+<ul class="flex flex-col gap-2 text-sm">
+<li><a class="text-stone-400 hover:text-white transition-colors" data-path="home" href="/">Home</a></li>
+<li><a class="text-stone-400 hover:text-white transition-colors" data-path="business-desk" href="#business-desk" title="How Business Desk works">How It Works</a></li>
+<li><a class="text-stone-400 hover:text-white transition-colors" data-path="services" href="#business-desk-modules" title="Business Desk capabilities">Features</a></li>
+<li><a class="text-stone-400 hover:text-white transition-colors" data-path="pricing" href="#pricing" title="Pricing">Pricing</a></li>
+<li><a class="text-stone-400 hover:text-white transition-colors" data-path="faqs" href="#faqs" title="Frequently asked questions">FAQs</a></li>
+</ul>
+</div>
+<div class="md:col-span-3 flex flex-col gap-3">
+<h3 class="text-xs uppercase tracking-wider font-semibold text-stone-300">Connect</h3>
+<ul class="flex flex-col gap-2 text-sm">
+<li>
+<a class="text-stone-400 hover:text-white transition-colors flex items-center gap-2" data-contact="whatsapp" href="https://wa.me/917988930154?text=Hi%20Axois%20Studios%2C%20I%27d%20like%20to%20see%20Business%20Desk." rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px] text-[#62df7d]">chat</span>
+<span>WhatsApp</span>
+</a>
+</li>
+<li>
+<a class="text-stone-400 hover:text-white transition-colors flex items-center gap-2" data-contact="phone" href="tel:+917988930154">
+<span class="material-symbols-outlined text-[18px]">call</span>
+<span>Call</span>
+</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-stone-500">
+<p>© 2026 Axois Studios. Business Desk is a product by Axois Studios.</p>
+<p class="font-medium">Built for growing Indian businesses</p>
+</div>
+</div>
+</footer>
+<!-- Accordion Logic -->
+<script>
+    (function () {
+      const toggles = document.querySelectorAll('.faq-toggle');
+      toggles.forEach(toggle => {
+        toggle.addEventListener('click', () => {
+          const content = toggle.nextElementSibling;
+          const icon = toggle.querySelector('.material-symbols-outlined');
+          const isExpanded = toggle.getAttribute('aria-expanded') === 'true';
+
+          toggles.forEach(otherToggle => {
+            if (otherToggle !== toggle) {
+              otherToggle.setAttribute('aria-expanded', 'false');
+              otherToggle.nextElementSibling.classList.add('hidden');
+              const otherIcon = otherToggle.querySelector('.material-symbols-outlined');
+              if (otherIcon) {
+                otherIcon.textContent = 'add';
+                otherIcon.style.transform = 'rotate(0deg)';
+              }
+            }
+          });
+
+          if (isExpanded) {
+            toggle.setAttribute('aria-expanded', 'false');
+            content.classList.add('hidden');
+            if (icon) {
+              icon.textContent = 'add';
+              icon.style.transform = 'rotate(0deg)';
+            }
+          } else {
+            toggle.setAttribute('aria-expanded', 'true');
+            content.classList.remove('hidden');
+            if (icon) {
+              icon.textContent = 'remove';
+              icon.style.transform = 'rotate(180deg)';
+            }
+          }
+        });
+      });
+    })();
+  </script>
+<script>
+  (function () {
+    const toggle = document.getElementById('mobile-menu-toggle');
+    const menu = document.getElementById('mobile-menu');
+    if (!toggle || !menu) return;
+    toggle.addEventListener('click', function () {
+      const open = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', String(!open));
+      menu.classList.toggle('hidden', open);
+      const icon = toggle.querySelector('.material-symbols-outlined');
+      if (icon) icon.textContent = open ? 'menu' : 'close';
+    });
+    menu.querySelectorAll('a').forEach(function (link) {
+      link.addEventListener('click', function () {
+        menu.classList.add('hidden');
+        toggle.setAttribute('aria-expanded', 'false');
+        const icon = toggle.querySelector('.material-symbols-outlined');
+        if (icon) icon.textContent = 'menu';
+      });
+    });
+  })();
+</script>
+<script>
+  // Contact links are intentionally hard-coded so they work even if JavaScript is disabled.
+</script>
+</body></html>
